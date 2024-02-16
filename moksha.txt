@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5b1ca00f-b1f3-4b92-a6a9-21b4882b63d6" activeEnvironment="Default" name="BankingOPerations" resourceRoot="" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="d49c8b59-8dab-4994-9212-f455078a8168" wsaVersion="NONE" name="BankingOPerationsSoapBinding" type="wsdl" bindingName="{http://com}BankingOPerationsSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations?wsdl"><con:part><con:url>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://com" xmlns:intf="http://com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+  <wsdl:types>
+    <schema elementFormDefault="qualified" targetNamespace="http://com" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="ifsicodechecker">
+        <complexType>
+          <sequence>
+            <element name="ifsicode" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ifsicodecheckerResponse">
+        <complexType>
+          <sequence>
+            <element name="ifsicodecheckerReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="carLoan">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="rate" type="xsd:double"/>
+            <element name="tenure" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="carLoanResponse">
+        <complexType>
+          <sequence>
+            <element name="carLoanReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="cardCompanyCheck">
+        <complexType>
+          <sequence>
+            <element name="cardnumber" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="cardCompanyCheckResponse">
+        <complexType>
+          <sequence>
+            <element name="cardCompanyCheckReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="personalLoan">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="rate" type="xsd:double"/>
+            <element name="tenure" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="personalLoanResponse">
+        <complexType>
+          <sequence>
+            <element name="personalLoanReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="housingLoan">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="rate" type="xsd:double"/>
+            <element name="tenure" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="housingLoanResponse">
+        <complexType>
+          <sequence>
+            <element name="housingLoanReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="goldLoanCalculator">
+        <complexType>
+          <sequence>
+            <element name="weight" type="xsd:double"/>
+            <element name="karat" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="goldLoanCalculatorResponse">
+        <complexType>
+          <sequence>
+            <element name="goldLoanCalculatorReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fastTag">
+        <complexType>
+          <sequence>
+            <element name="vehicleNo" type="xsd:string"/>
+            <element name="phoneNo" type="xsd:string"/>
+            <element name="accountNo" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fastTagResponse">
+        <complexType>
+          <sequence>
+            <element name="fastTagReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fdinterestRate">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="tenure" type="xsd:int"/>
+            <element name="seniorCiti" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fdinterestRateResponse">
+        <complexType>
+          <sequence>
+            <element name="fdinterestRateReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="forexCalculator">
+        <complexType>
+          <sequence>
+            <element name="fromCountry" type="xsd:string"/>
+            <element name="toCountry" type="xsd:string"/>
+            <element name="amount" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="forexCalculatorResponse">
+        <complexType>
+          <sequence>
+            <element name="forexCalculatorReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="linkPanandAadhaar">
+        <complexType>
+          <sequence>
+            <element name="pan" type="xsd:string"/>
+            <element name="aadhar" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="linkPanandAadhaarResponse">
+        <complexType>
+          <sequence>
+            <element name="linkPanandAadhaarReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="loanEligiblecheck">
+        <complexType>
+          <sequence>
+            <element name="cibilscore" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="loanEligiblecheckResponse">
+        <complexType>
+          <sequence>
+            <element name="loanEligiblecheckReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="loanStatus">
+        <complexType>
+          <sequence>
+            <element name="phoneNo" type="xsd:string"/>
+            <element name="applicationNo" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="loanStatusResponse">
+        <complexType>
+          <sequence>
+            <element name="loanStatusReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="sipCalculator">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="years" type="xsd:int"/>
+            <element name="returns" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="sipCalculatorResponse">
+        <complexType>
+          <sequence>
+            <element name="sipCalculatorReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="carInsuranceValue">
+        <complexType>
+          <sequence>
+            <element name="vehicleNo" type="xsd:string"/>
+            <element name="idv" type="xsd:int"/>
+            <element name="accidentstatus" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="carInsuranceValueResponse">
+        <complexType>
+          <sequence>
+            <element name="carInsuranceValueReturn" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="educationLoan">
+        <complexType>
+          <sequence>
+            <element name="amount" type="xsd:double"/>
+            <element name="rate" type="xsd:double"/>
+            <element name="tenure" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="educationLoanResponse">
+        <complexType>
+          <sequence>
+            <element name="educationLoanReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="creditCardNumberValidation">
+        <complexType>
+          <sequence>
+            <element name="ccNumber" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="creditCardNumberValidationResponse">
+        <complexType>
+          <sequence>
+            <element name="creditCardNumberValidationReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="onlineComplaintServiceRequest">
+        <complexType>
+          <sequence>
+            <element name="accountNo" type="xsd:string"/>
+            <element name="phoneNo" type="xsd:string"/>
+            <element name="issueDescr" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="onlineComplaintServiceRequestResponse">
+        <complexType>
+          <sequence>
+            <element name="onlineComplaintServiceRequestReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="retirementSavingCalculator">
+        <complexType>
+          <sequence>
+            <element name="age" type="xsd:int"/>
+            <element name="monthlyincome" type="xsd:double"/>
+            <element name="monthlyexpense" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="retirementSavingCalculatorResponse">
+        <complexType>
+          <sequence>
+            <element name="retirementSavingCalculatorReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fundTransferCharges">
+        <complexType>
+          <sequence>
+            <element name="type" type="xsd:string"/>
+            <element name="amount" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="fundTransferChargesResponse">
+        <complexType>
+          <sequence>
+            <element name="fundTransferChargesReturn" type="xsd:double"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="creditCardActivationandLimit">
+        <complexType>
+          <sequence>
+            <element name="ccNumber" type="xsd:string"/>
+            <element name="task" type="xsd:string"/>
+            <element name="spendinglimit" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="creditCardActivationandLimitResponse">
+        <complexType>
+          <sequence>
+            <element name="creditCardActivationandLimitReturn" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="goldLoanCalculatorResponse">
+    <wsdl:part element="impl:goldLoanCalculatorResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personalLoanResponse">
+    <wsdl:part element="impl:personalLoanResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fdinterestRateResponse">
+    <wsdl:part element="impl:fdinterestRateResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="educationLoanResponse">
+    <wsdl:part element="impl:educationLoanResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personalLoanRequest">
+    <wsdl:part element="impl:personalLoan" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="onlineComplaintServiceRequestRequest">
+    <wsdl:part element="impl:onlineComplaintServiceRequest" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ifsicodecheckerRequest">
+    <wsdl:part element="impl:ifsicodechecker" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="creditCardActivationandLimitRequest">
+    <wsdl:part element="impl:creditCardActivationandLimit" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="housingLoanRequest">
+    <wsdl:part element="impl:housingLoan" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="goldLoanCalculatorRequest">
+    <wsdl:part element="impl:goldLoanCalculator" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loanEligiblecheckResponse">
+    <wsdl:part element="impl:loanEligiblecheckResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retirementSavingCalculatorResponse">
+    <wsdl:part element="impl:retirementSavingCalculatorResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fundTransferChargesResponse">
+    <wsdl:part element="impl:fundTransferChargesResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fastTagResponse">
+    <wsdl:part element="impl:fastTagResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="carLoanResponse">
+    <wsdl:part element="impl:carLoanResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loanStatusResponse">
+    <wsdl:part element="impl:loanStatusResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="carLoanRequest">
+    <wsdl:part element="impl:carLoan" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="educationLoanRequest">
+    <wsdl:part element="impl:educationLoan" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loanEligiblecheckRequest">
+    <wsdl:part element="impl:loanEligiblecheck" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="carInsuranceValueRequest">
+    <wsdl:part element="impl:carInsuranceValue" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="creditCardNumberValidationRequest">
+    <wsdl:part element="impl:creditCardNumberValidation" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fastTagRequest">
+    <wsdl:part element="impl:fastTag" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sipCalculatorRequest">
+    <wsdl:part element="impl:sipCalculator" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="forexCalculatorResponse">
+    <wsdl:part element="impl:forexCalculatorResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="forexCalculatorRequest">
+    <wsdl:part element="impl:forexCalculator" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ifsicodecheckerResponse">
+    <wsdl:part element="impl:ifsicodecheckerResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fdinterestRateRequest">
+    <wsdl:part element="impl:fdinterestRate" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="creditCardNumberValidationResponse">
+    <wsdl:part element="impl:creditCardNumberValidationResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="linkPanandAadhaarRequest">
+    <wsdl:part element="impl:linkPanandAadhaar" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fundTransferChargesRequest">
+    <wsdl:part element="impl:fundTransferCharges" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="cardCompanyCheckResponse">
+    <wsdl:part element="impl:cardCompanyCheckResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="loanStatusRequest">
+    <wsdl:part element="impl:loanStatus" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="carInsuranceValueResponse">
+    <wsdl:part element="impl:carInsuranceValueResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="creditCardActivationandLimitResponse">
+    <wsdl:part element="impl:creditCardActivationandLimitResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retirementSavingCalculatorRequest">
+    <wsdl:part element="impl:retirementSavingCalculator" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="linkPanandAadhaarResponse">
+    <wsdl:part element="impl:linkPanandAadhaarResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="housingLoanResponse">
+    <wsdl:part element="impl:housingLoanResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sipCalculatorResponse">
+    <wsdl:part element="impl:sipCalculatorResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="cardCompanyCheckRequest">
+    <wsdl:part element="impl:cardCompanyCheck" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="onlineComplaintServiceRequestResponse">
+    <wsdl:part element="impl:onlineComplaintServiceRequestResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BankingOPerations">
+    <wsdl:operation name="ifsicodechecker">
+      <wsdl:input message="impl:ifsicodecheckerRequest" name="ifsicodecheckerRequest"></wsdl:input>
+      <wsdl:output message="impl:ifsicodecheckerResponse" name="ifsicodecheckerResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="carLoan">
+      <wsdl:input message="impl:carLoanRequest" name="carLoanRequest"></wsdl:input>
+      <wsdl:output message="impl:carLoanResponse" name="carLoanResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cardCompanyCheck">
+      <wsdl:input message="impl:cardCompanyCheckRequest" name="cardCompanyCheckRequest"></wsdl:input>
+      <wsdl:output message="impl:cardCompanyCheckResponse" name="cardCompanyCheckResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personalLoan">
+      <wsdl:input message="impl:personalLoanRequest" name="personalLoanRequest"></wsdl:input>
+      <wsdl:output message="impl:personalLoanResponse" name="personalLoanResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="housingLoan">
+      <wsdl:input message="impl:housingLoanRequest" name="housingLoanRequest"></wsdl:input>
+      <wsdl:output message="impl:housingLoanResponse" name="housingLoanResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="goldLoanCalculator">
+      <wsdl:input message="impl:goldLoanCalculatorRequest" name="goldLoanCalculatorRequest"></wsdl:input>
+      <wsdl:output message="impl:goldLoanCalculatorResponse" name="goldLoanCalculatorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fastTag">
+      <wsdl:input message="impl:fastTagRequest" name="fastTagRequest"></wsdl:input>
+      <wsdl:output message="impl:fastTagResponse" name="fastTagResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fdinterestRate">
+      <wsdl:input message="impl:fdinterestRateRequest" name="fdinterestRateRequest"></wsdl:input>
+      <wsdl:output message="impl:fdinterestRateResponse" name="fdinterestRateResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forexCalculator">
+      <wsdl:input message="impl:forexCalculatorRequest" name="forexCalculatorRequest"></wsdl:input>
+      <wsdl:output message="impl:forexCalculatorResponse" name="forexCalculatorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkPanandAadhaar">
+      <wsdl:input message="impl:linkPanandAadhaarRequest" name="linkPanandAadhaarRequest"></wsdl:input>
+      <wsdl:output message="impl:linkPanandAadhaarResponse" name="linkPanandAadhaarResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loanEligiblecheck">
+      <wsdl:input message="impl:loanEligiblecheckRequest" name="loanEligiblecheckRequest"></wsdl:input>
+      <wsdl:output message="impl:loanEligiblecheckResponse" name="loanEligiblecheckResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loanStatus">
+      <wsdl:input message="impl:loanStatusRequest" name="loanStatusRequest"></wsdl:input>
+      <wsdl:output message="impl:loanStatusResponse" name="loanStatusResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sipCalculator">
+      <wsdl:input message="impl:sipCalculatorRequest" name="sipCalculatorRequest"></wsdl:input>
+      <wsdl:output message="impl:sipCalculatorResponse" name="sipCalculatorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="carInsuranceValue">
+      <wsdl:input message="impl:carInsuranceValueRequest" name="carInsuranceValueRequest"></wsdl:input>
+      <wsdl:output message="impl:carInsuranceValueResponse" name="carInsuranceValueResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="educationLoan">
+      <wsdl:input message="impl:educationLoanRequest" name="educationLoanRequest"></wsdl:input>
+      <wsdl:output message="impl:educationLoanResponse" name="educationLoanResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creditCardNumberValidation">
+      <wsdl:input message="impl:creditCardNumberValidationRequest" name="creditCardNumberValidationRequest"></wsdl:input>
+      <wsdl:output message="impl:creditCardNumberValidationResponse" name="creditCardNumberValidationResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineComplaintServiceRequest">
+      <wsdl:input message="impl:onlineComplaintServiceRequestRequest" name="onlineComplaintServiceRequestRequest"></wsdl:input>
+      <wsdl:output message="impl:onlineComplaintServiceRequestResponse" name="onlineComplaintServiceRequestResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retirementSavingCalculator">
+      <wsdl:input message="impl:retirementSavingCalculatorRequest" name="retirementSavingCalculatorRequest"></wsdl:input>
+      <wsdl:output message="impl:retirementSavingCalculatorResponse" name="retirementSavingCalculatorResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fundTransferCharges">
+      <wsdl:input message="impl:fundTransferChargesRequest" name="fundTransferChargesRequest"></wsdl:input>
+      <wsdl:output message="impl:fundTransferChargesResponse" name="fundTransferChargesResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creditCardActivationandLimit">
+      <wsdl:input message="impl:creditCardActivationandLimitRequest" name="creditCardActivationandLimitRequest"></wsdl:input>
+      <wsdl:output message="impl:creditCardActivationandLimitResponse" name="creditCardActivationandLimitResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BankingOPerationsSoapBinding" type="impl:BankingOPerations">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ifsicodechecker">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="ifsicodecheckerRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ifsicodecheckerResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="carLoan">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="carLoanRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="carLoanResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cardCompanyCheck">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="cardCompanyCheckRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cardCompanyCheckResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personalLoan">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="personalLoanRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="personalLoanResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="housingLoan">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="housingLoanRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="housingLoanResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="goldLoanCalculator">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="goldLoanCalculatorRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="goldLoanCalculatorResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fastTag">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fastTagRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fastTagResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fdinterestRate">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fdinterestRateRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fdinterestRateResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forexCalculator">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="forexCalculatorRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="forexCalculatorResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkPanandAadhaar">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="linkPanandAadhaarRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="linkPanandAadhaarResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loanEligiblecheck">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="loanEligiblecheckRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="loanEligiblecheckResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loanStatus">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="loanStatusRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="loanStatusResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sipCalculator">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="sipCalculatorRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sipCalculatorResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="carInsuranceValue">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="carInsuranceValueRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="carInsuranceValueResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="educationLoan">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="educationLoanRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="educationLoanResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creditCardNumberValidation">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="creditCardNumberValidationRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="creditCardNumberValidationResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineComplaintServiceRequest">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="onlineComplaintServiceRequestRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="onlineComplaintServiceRequestResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retirementSavingCalculator">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="retirementSavingCalculatorRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retirementSavingCalculatorResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fundTransferCharges">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fundTransferChargesRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fundTransferChargesResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creditCardActivationandLimit">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="creditCardActivationandLimitRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="creditCardActivationandLimitResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BankingOPerationsService">
+    <wsdl:port binding="impl:BankingOPerationsSoapBinding" name="BankingOPerations">
+      <wsdlsoap:address location="https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint></con:endpoints><con:operation id="43d8965f-09e2-4a47-9e13-72c66a18236b" isOneWay="false" action="" name="cardCompanyCheck" bindingOperationName="cardCompanyCheck" type="Request-Response" outputName="cardCompanyCheckResponse" inputName="cardCompanyCheckRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="298b605e-b42b-4045-b74f-cc433d6a1fd1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:cardCompanyCheck>\r
+         <com:cardnumber>?</com:cardnumber>\r
+      </com:cardCompanyCheck>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/cardCompanyCheckRequest"/></con:call></con:operation><con:operation id="9242c082-cca7-4c75-9fc7-d3117a11d2a1" isOneWay="false" action="" name="carInsuranceValue" bindingOperationName="carInsuranceValue" type="Request-Response" outputName="carInsuranceValueResponse" inputName="carInsuranceValueRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0871e0c8-2062-4d05-a5ce-71242f4189ed" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:carInsuranceValue>\r
+         <com:vehicleNo>?</com:vehicleNo>\r
+         <com:idv>?</com:idv>\r
+         <com:accidentstatus>?</com:accidentstatus>\r
+      </com:carInsuranceValue>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/carInsuranceValueRequest"/></con:call></con:operation><con:operation id="c1c034ce-07db-48c6-8cc7-c0106fd7e741" isOneWay="false" action="" name="carLoan" bindingOperationName="carLoan" type="Request-Response" outputName="carLoanResponse" inputName="carLoanRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3a8887a7-ed0f-4e00-8451-88e520fb90f7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:carLoan>\r
+         <com:amount>?</com:amount>\r
+         <com:rate>?</com:rate>\r
+         <com:tenure>?</com:tenure>\r
+      </com:carLoan>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/carLoanRequest"/></con:call></con:operation><con:operation id="f58d8836-d384-40e3-9b45-9cb14ab86574" isOneWay="false" action="" name="creditCardActivationandLimit" bindingOperationName="creditCardActivationandLimit" type="Request-Response" outputName="creditCardActivationandLimitResponse" inputName="creditCardActivationandLimitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7cada966-45d9-45cc-910a-920f098f9fed" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:creditCardActivationandLimit>\r
+         <com:ccNumber>?</com:ccNumber>\r
+         <com:task>?</com:task>\r
+         <com:spendinglimit>?</com:spendinglimit>\r
+      </com:creditCardActivationandLimit>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/creditCardActivationandLimitRequest"/></con:call></con:operation><con:operation id="d29570e6-2a62-411b-a038-af938bc1c1f2" isOneWay="false" action="" name="creditCardNumberValidation" bindingOperationName="creditCardNumberValidation" type="Request-Response" outputName="creditCardNumberValidationResponse" inputName="creditCardNumberValidationRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="24ffd61e-d5cb-440c-8f59-ef8d62d6e1f6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:creditCardNumberValidation>\r
+         <com:ccNumber>?</com:ccNumber>\r
+      </com:creditCardNumberValidation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/creditCardNumberValidationRequest"/></con:call></con:operation><con:operation id="145a16f4-4b9e-4d86-8988-ba71b12940a6" isOneWay="false" action="" name="educationLoan" bindingOperationName="educationLoan" type="Request-Response" outputName="educationLoanResponse" inputName="educationLoanRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cb3aea51-c5ed-4ad7-a205-f911b3b3cfbc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:educationLoan>\r
+         <com:amount>?</com:amount>\r
+         <com:rate>?</com:rate>\r
+         <com:tenure>?</com:tenure>\r
+      </com:educationLoan>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/educationLoanRequest"/></con:call></con:operation><con:operation id="da2ffa1d-55cc-43bf-8d89-4b33e6d4522e" isOneWay="false" action="" name="fastTag" bindingOperationName="fastTag" type="Request-Response" outputName="fastTagResponse" inputName="fastTagRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e5da88ba-abc4-4b47-acb6-5b3645327aa0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:fastTag>\r
+         <com:vehicleNo>?</com:vehicleNo>\r
+         <com:phoneNo>?</com:phoneNo>\r
+         <com:accountNo>?</com:accountNo>\r
+      </com:fastTag>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/fastTagRequest"/></con:call></con:operation><con:operation id="e5979244-655b-4187-97fd-82dd99a64eec" isOneWay="false" action="" name="fdinterestRate" bindingOperationName="fdinterestRate" type="Request-Response" outputName="fdinterestRateResponse" inputName="fdinterestRateRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e3cf01e3-531e-4046-a983-6ab531fdd6a6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:fdinterestRate>\r
+         <com:amount>?</com:amount>\r
+         <com:tenure>?</com:tenure>\r
+         <com:seniorCiti>?</com:seniorCiti>\r
+      </com:fdinterestRate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/fdinterestRateRequest"/></con:call></con:operation><con:operation id="d1b404f5-6c4d-4418-8206-cbc3a32d4d54" isOneWay="false" action="" name="forexCalculator" bindingOperationName="forexCalculator" type="Request-Response" outputName="forexCalculatorResponse" inputName="forexCalculatorRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5b697922-3c38-4708-bb53-9b90ece532f0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:forexCalculator>\r
+         <com:fromCountry>?</com:fromCountry>\r
+         <com:toCountry>?</com:toCountry>\r
+         <com:amount>?</com:amount>\r
+      </com:forexCalculator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/forexCalculatorRequest"/></con:call></con:operation><con:operation id="9ea0bf13-10b7-485d-ab70-baf1605e8d09" isOneWay="false" action="" name="fundTransferCharges" bindingOperationName="fundTransferCharges" type="Request-Response" outputName="fundTransferChargesResponse" inputName="fundTransferChargesRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c576b39c-065e-4589-8d2c-9f89926cd043" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:fundTransferCharges>\r
+         <com:type>?</com:type>\r
+         <com:amount>?</com:amount>\r
+      </com:fundTransferCharges>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/fundTransferChargesRequest"/></con:call></con:operation><con:operation id="d1955c21-5d48-4885-933e-1a131fd694eb" isOneWay="false" action="" name="goldLoanCalculator" bindingOperationName="goldLoanCalculator" type="Request-Response" outputName="goldLoanCalculatorResponse" inputName="goldLoanCalculatorRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="41cafac0-e003-4afd-a0c5-ff87c60ba740" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:goldLoanCalculator>\r
+         <com:weight>?</com:weight>\r
+         <com:karat>?</com:karat>\r
+      </com:goldLoanCalculator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/goldLoanCalculatorRequest"/></con:call></con:operation><con:operation id="0a31661b-4521-4feb-bc73-384668d28684" isOneWay="false" action="" name="housingLoan" bindingOperationName="housingLoan" type="Request-Response" outputName="housingLoanResponse" inputName="housingLoanRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="08025e84-e2ff-4377-8099-d98822703e20" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:housingLoan>\r
+         <com:amount>?</com:amount>\r
+         <com:rate>?</com:rate>\r
+         <com:tenure>?</com:tenure>\r
+      </com:housingLoan>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/housingLoanRequest"/></con:call></con:operation><con:operation id="9b92d8af-21aa-4ec9-8a5a-29be7ff1ea07" isOneWay="false" action="" name="ifsicodechecker" bindingOperationName="ifsicodechecker" type="Request-Response" outputName="ifsicodecheckerResponse" inputName="ifsicodecheckerRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2d61d4ff-06c1-45fb-b843-2911b4d58fa5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:ifsicodechecker>\r
+         <com:ifsicode>?</com:ifsicode>\r
+      </com:ifsicodechecker>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/ifsicodecheckerRequest"/></con:call></con:operation><con:operation id="09ee0a63-12d0-4bff-b752-f1b3918380e9" isOneWay="false" action="" name="linkPanandAadhaar" bindingOperationName="linkPanandAadhaar" type="Request-Response" outputName="linkPanandAadhaarResponse" inputName="linkPanandAadhaarRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dc175fa6-28fd-4ddc-93ad-52843c679aff" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>?</com:pan>\r
+         <com:aadhar>?</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/linkPanandAadhaarRequest"/></con:call></con:operation><con:operation id="8318e3cd-0c72-4e8f-96ce-56bb5eb2b5b2" isOneWay="false" action="" name="loanEligiblecheck" bindingOperationName="loanEligiblecheck" type="Request-Response" outputName="loanEligiblecheckResponse" inputName="loanEligiblecheckRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="89d6ffe7-2b31-4726-b0cf-4474e2a4f514" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:loanEligiblecheck>\r
+         <com:cibilscore>?</com:cibilscore>\r
+      </com:loanEligiblecheck>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/loanEligiblecheckRequest"/></con:call></con:operation><con:operation id="49397e41-38ce-4e52-96af-285de1eea231" isOneWay="false" action="" name="loanStatus" bindingOperationName="loanStatus" type="Request-Response" outputName="loanStatusResponse" inputName="loanStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c8102f75-2b8c-448b-91a5-8535bc80bfe4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:loanStatus>\r
+         <com:phoneNo>?</com:phoneNo>\r
+         <com:applicationNo>?</com:applicationNo>\r
+      </com:loanStatus>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/loanStatusRequest"/></con:call></con:operation><con:operation id="80ba5cda-f982-4359-bb8a-ed7377416418" isOneWay="false" action="" name="onlineComplaintServiceRequest" bindingOperationName="onlineComplaintServiceRequest" type="Request-Response" outputName="onlineComplaintServiceRequestResponse" inputName="onlineComplaintServiceRequestRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a80df759-c045-4d7d-a39c-fa9785134ac4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:onlineComplaintServiceRequest>\r
+         <com:accountNo>?</com:accountNo>\r
+         <com:phoneNo>?</com:phoneNo>\r
+         <com:issueDescr>?</com:issueDescr>\r
+      </com:onlineComplaintServiceRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/onlineComplaintServiceRequestRequest"/></con:call></con:operation><con:operation id="2035cfbf-3c26-4993-a119-a77fef2e867a" isOneWay="false" action="" name="personalLoan" bindingOperationName="personalLoan" type="Request-Response" outputName="personalLoanResponse" inputName="personalLoanRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fecd2d55-597a-4b44-bfc6-0df45ad5c2cf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:personalLoan>\r
+         <com:amount>?</com:amount>\r
+         <com:rate>?</com:rate>\r
+         <com:tenure>?</com:tenure>\r
+      </com:personalLoan>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/personalLoanRequest"/></con:call></con:operation><con:operation id="b492e570-934e-4fe9-9a39-29ede5a7720a" isOneWay="false" action="" name="retirementSavingCalculator" bindingOperationName="retirementSavingCalculator" type="Request-Response" outputName="retirementSavingCalculatorResponse" inputName="retirementSavingCalculatorRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="06d8c3a7-5d7e-44c8-a201-2a3e783411b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:retirementSavingCalculator>\r
+         <com:age>?</com:age>\r
+         <com:monthlyincome>?</com:monthlyincome>\r
+         <com:monthlyexpense>?</com:monthlyexpense>\r
+      </com:retirementSavingCalculator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/retirementSavingCalculatorRequest"/></con:call></con:operation><con:operation id="a27185dc-af26-4bc4-99d0-b967e301ed26" isOneWay="false" action="" name="sipCalculator" bindingOperationName="sipCalculator" type="Request-Response" outputName="sipCalculatorResponse" inputName="sipCalculatorRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0392ebcd-3396-45db-be5d-d6ed12de0761" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:sipCalculator>\r
+         <com:amount>?</com:amount>\r
+         <com:years>?</com:years>\r
+         <com:returns>?</com:returns>\r
+      </com:sipCalculator>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://com/BankingOPerations/sipCalculatorRequest"/></con:call></con:operation></con:interface><con:testSuite id="fb5ec479-6371-4482-be53-6151741cd47f" name="Link PAN and Aadhar"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="48a6e957-cb16-4dbc-9c79-ddb44a452169" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Link PAN and Aadhar Check" searchProperties="true"><con:settings/><con:testStep type="request" name="Username element N/A linkPanandAadhaar" id="fe9dfbea-a866-42f3-9414-cefea4ee0056"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BankingOPerationsSoapBinding</con:interface><con:operation>linkPanandAadhaar</con:operation><con:request name="Username element N/A linkPanandAadhaar" id="1a10c81d-caa1-4c1b-9e99-51584de0a48b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>CMMPG1234C</com:pan>\r
+         <com:aadhar>6010 4050 6070</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="019ae224-1776-4c45-856f-a77269b5a30a"/><con:assertion type="Not SOAP Fault Assertion" id="3bd9df86-73cf-4a10-816e-ab3a1a58d288" name="SOAP Fault"/><con:assertion type="XPath Match" id="73a92a48-63d8-4652-9248-2095035af2ea" name="XPath Match"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+//faultstring</path><content>Username Element in SOAP Header is Missing</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="11e3f088-c20a-4618-97fa-21731f0ddd76" name="Contains"><con:configuration><token>Username Element in SOAP Header is Missing</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Invalid for linkPanandAadhaar" id="352b9760-1807-4cc9-8a3c-630e86be9246"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BankingOPerationsSoapBinding</con:interface><con:operation>linkPanandAadhaar</con:operation><con:request name="Invalid for linkPanandAadhaar" id="694f3777-4fae-4c51-b55e-fe173d83cff2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header>\r
+   	<username>user</username>
+   </soapenv:Header>
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>CMMPG1234C</com:pan>\r
+         <com:aadhar>6010 4050 6070</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="621070cd-bb35-42c7-886c-70aad38ba64f"/><con:assertion type="Not SOAP Fault Assertion" id="38c23ae0-a957-404d-b92a-5855934f7ab1" name="SOAP Fault"/><con:assertion type="XPath Match" id="4abf41c4-7ded-4474-a74c-f55f487f3353" name="XPath Match"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+//faultstring</path><content>Sorry InValid UserName</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="aaa0ff13-b0d5-4e6f-a1c9-115cacf486ab" name="Contains"><con:configuration><token>Sorry InValid UserName</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Invalid PAN" id="8f4d41a8-85e9-46b6-acae-e9bc5c951860"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BankingOPerationsSoapBinding</con:interface><con:operation>linkPanandAadhaar</con:operation><con:request name="Invalid PAN" id="f753a792-7375-4b60-b8aa-52d39cef31ce"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header>
+   	<username>${#TestCase#username}</username>
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>CMMPG12C4C</com:pan>\r
+         <com:aadhar>6010 4050 6070</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="791e9202-17d7-4d04-a745-febe6f18ba20"/><con:assertion type="Not SOAP Fault Assertion" id="8d31ffe9-2641-44da-9299-19372fb765c0" name="SOAP Fault"/><con:assertion type="Simple Contains" id="27fa6442-0b5f-42e1-ac69-fa63c3fbc102" name="Contains"><con:configuration><token>PAN NUMBER INVALID</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="47c5be39-bda4-446d-9e89-1b6118dbd1f6" name="XPath Match"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+//faultstring</path><content>PAN NUMBER INVALID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Valid PAN and Aadhar" id="f1d56a5f-382e-47f6-9788-a308bf9f0c3a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BankingOPerationsSoapBinding</con:interface><con:operation>linkPanandAadhaar</con:operation><con:request name="Valid PAN and Aadhar" id="9d29f878-5fb9-429a-afd0-e4e78e4db2c5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header>
+   	<username>${#TestCase#username}</username>
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>CMMPG1234C</com:pan>\r
+         <com:aadhar>6010 4050 6070</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="74d7de50-3b54-4d6c-bce1-a656a07fdcd9"/><con:assertion type="SOAP Fault Assertion" id="521d9e4a-c159-463e-a4b5-044ec9e4ac39" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="64bab5f1-e79a-41ea-8d70-598dcb651719" name="Contains"><con:configuration><token>Pan Linked with Aadhaar</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="ee6eec6d-60da-4556-a9d9-b1e2c8ffb60e" name="XPath Match"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://com';
+//ns1:linkPanandAadhaarReturn</path><content>Pan Linked with Aadhaar</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="753ee9ae-babe-4463-a9e6-6ff700b10627"><con:settings/><con:config><delay>3000</delay></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="6a009c78-53a3-4ba3-813e-10c1b0ac53ba"><con:settings/><con:config><script>def requestname='Valid PAN and Aadhar'
+
+log.info context.expand('${'+requestname+'#Response}')</script></con:config></con:testStep><con:testStep type="request" name="Invalid Aadhar" id="e5a38460-0e0a-426c-b06c-86d73a457e50"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BankingOPerationsSoapBinding</con:interface><con:operation>linkPanandAadhaar</con:operation><con:request name="Invalid Aadhar" id="d304ac8d-76a8-4afb-843e-1af1cbae8699"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webapps.tekstac.com:8443/BankingService/services/BankingOPerations</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com">\r
+   <soapenv:Header>
+   	<username>${#TestCase#username}</username>
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <com:linkPanandAadhaar>\r
+         <com:pan>CMMPG1234C</com:pan>\r
+         <com:aadhar>0010 4050 6070</com:aadhar>\r
+      </com:linkPanandAadhaar>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e81ce97-d80d-462c-a332-0fe1e326cfc2"/><con:assertion type="Not SOAP Fault Assertion" id="2366a161-38b4-4c5e-a3d4-dc5b7ee761bd" name="SOAP Fault"/><con:assertion type="Simple Contains" id="1a512b0d-0dc2-4780-bb22-68291e16780a" name="Contains"><con:configuration><token>Aadhaar Number INVALID</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="cbbacb3a-5916-4a11-8416-7ae6ac537458" name="XPath Match"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+//faultstring</path><content>Aadhaar Number INVALID</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>username</con:name><con:value>admin</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

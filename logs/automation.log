@@ -1,18 +1,2 @@
-09:31:07.039 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****
-09:31:13.448 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Starting TC_004_CorporateHealthAndWellness_ValidDetails *****
-09:31:13.530 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Corporates
-09:31:46.483 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Health And Wellness Plans Option
-09:31:46.499 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Scrolled down
-09:31:46.597 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Name Entered
-09:31:46.701 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Organization Name Entered
-09:31:46.798 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Contact Number Entered
-09:31:46.895 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Valid Email-Id Entered
-09:31:47.028 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Organizantion's Size from Dropdown
-09:31:47.121 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
-09:31:47.200 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
-09:32:02.387 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
-09:32:02.388 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Validating expected THANK YOU Message
-09:32:02.422 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - THANK YOU Message Validated
-09:32:02.423 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Text in console 
-09:32:02.442 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
-09:32:02.442 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****
+10:13:45.044 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
+10:13:45.048 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****
