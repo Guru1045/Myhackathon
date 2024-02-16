@@ -1,0 +1,44 @@
+23:22:13.861 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
+23:22:14.085 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
+23:22:29.336 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
+23:22:29.336 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Validating expected THANK YOU Message
+23:22:29.378 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - THANK YOU Message Validated
+23:22:29.379 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Text in console 
+23:22:29.417 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
+23:22:29.417 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****
+15:55:41.515 [main] INFO  testCase.TC_001_SearchingCardiologiests - ***** Starting TC_001_SearchingCardiologiests *****
+15:55:41.645 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Location input box
+15:55:41.718 [main] INFO  testCase.TC_001_SearchingCardiologiests - Cleared existing Location Appearing
+15:55:41.868 [main] INFO  testCase.TC_001_SearchingCardiologiests - Entered Location as Banglore
+15:55:51.894 [main] ERROR testCase.TC_001_SearchingCardiologiests - Searching Cardiologiests test failed..
+15:56:34.023 [main] INFO  testCase.TC_002_CaptureSurgeries - ***** Starting TC_002_CaptureSurgeries *****
+15:56:50.934 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Surgeries 
+15:56:51.011 [main] INFO  testCase.TC_002_CaptureSurgeries - Scrolled Down Untill Popular Surgeries
+15:56:52.362 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Popular Surgeries
+15:56:52.406 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Popular Surgeries in Console and Excel Sheet
+15:56:56.654 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Popular Surgeries in Console and Excel Sheet
+15:56:57.034 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On General Surgery
+15:56:58.482 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of General Surgery
+15:56:58.569 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All General Surgeries in Console and Excel Sheet
+15:57:00.458 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All General Surgeries in Console and Excel Sheet
+15:57:00.594 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+15:57:01.080 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Proctology
+15:57:02.409 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Proctology Surgeries
+15:57:02.426 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Proctology Surgeries in Console and Excel Sheet
+15:57:02.862 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Proctology Surgeries in Console and Excel Sheet
+15:57:02.979 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+15:57:03.447 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Ophthamology
+15:57:04.796 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Ophthamology Surgeries
+15:57:04.820 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Ophthamology Surgeries in Console and Excel Sheet
+15:57:05.448 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Ophthamology Surgeries in Console and Excel Sheet
+15:57:05.593 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+15:57:06.126 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Urology
+15:57:07.518 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Urology Surgeries
+15:57:07.537 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Urology Surgeries in Console and Excel Sheet
+15:57:08.562 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Urology Surgeries in Console and Excel Sheet
+15:57:08.672 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+15:57:09.141 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Cosmetic
+15:57:10.468 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Cosmetic Surgeries
+15:57:10.483 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Cosmetic Surgeries in Console and Excel Sheet
+15:57:10.901 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Cosmetic Surgeries in Console and Excel Sheet
+15:57:10.983 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
