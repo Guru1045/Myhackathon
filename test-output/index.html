@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,35 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 1 failed,  1 skipped,  9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_001_SearchingCardiologiests" class="method navigator-link" hash-for-method="SearchingCardiologiests">SearchingCardiologiests</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_001_SearchingCardiologiests" class="method navigator-link" hash-for-method="gettingCardiologiests">gettingCardiologiests</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -161,6 +133,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_001_SearchingCardiologiests" class="method navigator-link" hash-for-method="SearchingCardiologiests">SearchingCardiologiests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCase.TC_002_CaptureSurgeries" class="method navigator-link" hash-for-method="UrologySurgeries">UrologySurgeries</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,6 +149,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCase.TC_004_CorporateHealthAndWellness_ValidDetails" class="method navigator-link" hash-for-method="checkingValidDetails">checkingValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_001_SearchingCardiologiests" class="method navigator-link" hash-for-method="gettingCardiologiests">gettingCardiologiests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -186,54 +168,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCase.TC_001_SearchingCardiologiests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchingCardiologiests">
-                  </a> <!-- SearchingCardiologiests -->
-                  <span class="method-name">SearchingCardiologiests</span>
-                  <div class="stack-trace">java.lang.AssertionError: An exception occurred in Searching Cardiologiests test: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@data-qa-id=&apos;omni-suggestion-city&apos;])[1]&quot;}
-  (Session info: MicrosoftEdge=121.0.2277.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [b1c642bd3eb7bc46b0f37762715391e3, findElement {value=(//div[@data-qa-id=&apos;omni-suggestion-city&apos;])[1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56895}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56895/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b1c642bd3eb7bc46b0f37762715391e3
-	at testCase.TC_001_SearchingCardiologiests.SearchingCardiologiests(TC_001_SearchingCardiologiests.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testCase.TC_001_SearchingCardiologiests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="gettingCardiologiests">
-                  </a> <!-- gettingCardiologiests -->
-                  <span class="method-name">gettingCardiologiests</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testCase.TC_001_SearchingCardiologiests.gettingCardiologiests() on instance testCase.TC_001_SearchingCardiologiests@350aac89 depends on not successfully finished methods 
-[testCase.TC_001_SearchingCardiologiests.SearchingCardiologiests() on instance testCase.TC_001_SearchingCardiologiests@350aac89]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -321,6 +255,28 @@ Session ID: b1c642bd3eb7bc46b0f37762715391e3
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.TC_001_SearchingCardiologiests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchingCardiologiests">
+                  </a> <!-- SearchingCardiologiests -->
+                  <span class="method-name">SearchingCardiologiests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gettingCardiologiests">
+                  </a> <!-- gettingCardiologiests -->
+                  <span class="method-name">gettingCardiologiests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -365,6 +321,54 @@ Session ID: b1c642bd3eb7bc46b0f37762715391e3
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CapturePopularSurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CosmeticSurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">GeneralSurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">OphthamologySurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">OrthopedicsSurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ProctologySurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SearchingCardiologiests</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UrologySurgeries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkingInvalidDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkingValidDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">gettingCardiologiests</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -385,52 +389,52 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkingValidDetails')
 data.setCell(0, 2, 'testCase.TC_004_CorporateHealthAndWellness_ValidDetails')
-data.setCell(0, 3, 79744);
+data.setCell(0, 3, 41140);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkingInvalidDetails')
-data.setCell(1, 2, 'testCase.TC_003_CorporateHealthAndWellness_InvalidDetails')
-data.setCell(1, 3, 34108);
+data.setCell(1, 1, 'gettingCardiologiests')
+data.setCell(1, 2, 'testCase.TC_001_SearchingCardiologiests')
+data.setCell(1, 3, 19399);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchingCardiologiests')
-data.setCell(2, 2, 'testCase.TC_001_SearchingCardiologiests')
-data.setCell(2, 3, 10751);
+data.setCell(2, 1, 'checkingInvalidDetails')
+data.setCell(2, 2, 'testCase.TC_003_CorporateHealthAndWellness_InvalidDetails')
+data.setCell(2, 3, 10374);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CapturePopularSurgeries')
-data.setCell(3, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(3, 3, 10485);
+data.setCell(3, 1, 'SearchingCardiologiests')
+data.setCell(3, 2, 'testCase.TC_001_SearchingCardiologiests')
+data.setCell(3, 3, 6409);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'GeneralSurgeries')
+data.setCell(4, 1, 'CapturePopularSurgeries')
 data.setCell(4, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(4, 3, 3673);
+data.setCell(4, 3, 5331);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'UrologySurgeries')
+data.setCell(5, 1, 'GeneralSurgeries')
 data.setCell(5, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(5, 3, 3260);
+data.setCell(5, 3, 3464);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'OrthopedicsSurgeries')
+data.setCell(6, 1, 'UrologySurgeries')
 data.setCell(6, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(6, 3, 3033);
+data.setCell(6, 3, 3280);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'CosmeticSurgeries')
+data.setCell(7, 1, 'ProctologySurgeries')
 data.setCell(7, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(7, 3, 2383);
+data.setCell(7, 3, 2746);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ProctologySurgeries')
+data.setCell(8, 1, 'CosmeticSurgeries')
 data.setCell(8, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(8, 3, 2214);
+data.setCell(8, 3, 2431);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'OphthamologySurgeries')
+data.setCell(9, 1, 'OrthopedicsSurgeries')
 data.setCell(9, 2, 'testCase.TC_002_CaptureSurgeries')
-data.setCell(9, 3, 1972);
+data.setCell(9, 3, 2418);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'gettingCardiologiests')
-data.setCell(10, 2, 'testCase.TC_001_SearchingCardiologiests')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'OphthamologySurgeries')
+data.setCell(10, 2, 'testCase.TC_002_CaptureSurgeries')
+data.setCell(10, 3, 2297);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -462,83 +466,85 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">SearchingCardiologiests</span>
-                <span class="method-start">38054 ms</span>
+                <span class="method-start">13612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gettingCardiologiests</span>
+                <span class="method-start">20285 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">49465 ms</span>
+                <span class="method-start">40047 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TC_002_CaptureSurgeries</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, edge)</span>
-                <span class="method-start">50685 ms</span>
+                <span class="method-start">41348 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">CapturePopularSurgeries</span>
-                <span class="method-start">87884 ms</span>
+                <span class="method-start">50468 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GeneralSurgeries</span>
-                <span class="method-start">98680 ms</span>
+                <span class="method-start">56032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ProctologySurgeries</span>
-                <span class="method-start">102900 ms</span>
+                <span class="method-start">59958 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">OphthamologySurgeries</span>
-                <span class="method-start">105497 ms</span>
+                <span class="method-start">63221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UrologySurgeries</span>
-                <span class="method-start">107928 ms</span>
+                <span class="method-start">65941 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CosmeticSurgeries</span>
-                <span class="method-start">111600 ms</span>
+                <span class="method-start">69632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">OrthopedicsSurgeries</span>
-                <span class="method-start">114410 ms</span>
+                <span class="method-start">72456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">117840 ms</span>
+                <span class="method-start">75291 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TC_003_CorporateHealthAndWellness_InvalidDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, edge)</span>
-                <span class="method-start">119095 ms</span>
+                <span class="method-start">76513 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkingInvalidDetails</span>
-                <span class="method-start">155697 ms</span>
+                <span class="method-start">88703 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">190149 ms</span>
+                <span class="method-start">99485 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TC_004_CorporateHealthAndWellness_ValidDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, edge)</span>
-                <span class="method-start">191303 ms</span>
+                <span class="method-start">100594 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkingValidDetails</span>
-                <span class="method-start">228261 ms</span>
+                <span class="method-start">124182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">308160 ms</span>
+                <span class="method-start">165529 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

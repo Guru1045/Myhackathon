@@ -11,7 +11,7 @@ import utilities.TakeScreenshot;
 
 public class TC_004_CorporateHealthAndWellness_ValidDetails extends baseClass{
 	
-	@Test(priority = 11)
+	@Test(priority = 11, groups= {"sanity"})
 	public void checkingValidDetails() throws InterruptedException
 	{
 	logger.info("***** Starting TC_004_CorporateHealthAndWellness_ValidDetails *****");

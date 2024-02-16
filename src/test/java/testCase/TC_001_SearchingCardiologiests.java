@@ -18,7 +18,7 @@ import utilities.ExcelUtils;
 
 public class TC_001_SearchingCardiologiests extends baseClass{
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups= {"sanity"})
 	public void SearchingCardiologiests() throws InterruptedException
 	{
 	
@@ -60,7 +60,7 @@ public class TC_001_SearchingCardiologiests extends baseClass{
 		
 	}
 	
-	@Test(dependsOnMethods = "SearchingCardiologiests")
+	@Test(dependsOnMethods = "SearchingCardiologiests", groups= {"sanity"})
 	
 	public void gettingCardiologiests() throws InterruptedException, IOException 
 	{

@@ -1,43 +1,46 @@
-10:10:25.141 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Urology
-10:10:26.464 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Urology Surgeries
-10:10:26.486 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Urology Surgeries in Console and Excel Sheet
-10:10:28.078 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Urology Surgeries in Console and Excel Sheet
-10:10:28.230 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
-10:10:28.849 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Cosmetic
-10:10:30.202 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Cosmetic Surgeries
-10:10:30.222 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Cosmetic Surgeries in Console and Excel Sheet
-10:10:30.894 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Cosmetic Surgeries in Console and Excel Sheet
-10:10:31.026 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
-10:10:31.850 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Orthopedics
-10:10:33.506 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Orthopedics Surgeries
-10:10:33.548 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Orthopedics Surgeries in Console and Excel Sheet
-10:10:34.367 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Orthopedics Surgeries in Console and Excel Sheet
-10:10:34.486 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
-10:10:34.486 [main] INFO  testCase.TC_002_CaptureSurgeries - ***** Ending TC_002_CaptureSurgeries *****
-10:11:12.742 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Starting TC_003_CorporateHealthAndWellness_InvalidDetails *****
-10:11:12.812 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Clicked On Corporates
-10:11:44.862 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Clicked On Health And Wellness Plans Option
-10:11:44.897 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Scrolled down
-10:11:46.274 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Name Entered
-10:11:46.383 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Organization Name Entered
-10:11:46.464 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - The Contact Number Entered
-10:11:46.545 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Invalid Email-Id Entered
-10:11:46.703 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Organizantion's Size from Dropdown
-10:11:46.823 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Interested-In from Dropdown
-10:11:46.847 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Schedule button is disabled
-10:11:46.847 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****
-10:12:25.306 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Starting TC_004_CorporateHealthAndWellness_ValidDetails *****
-10:12:25.408 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Corporates
-10:13:25.866 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Health And Wellness Plans Option
-10:13:25.892 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Scrolled down
-10:13:26.010 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Name Entered
-10:13:26.145 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Organization Name Entered
-10:13:26.240 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Contact Number Entered
-10:13:26.340 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Valid Email-Id Entered
-10:13:26.460 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Organizantion's Size from Dropdown
-10:13:26.576 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
-10:13:26.690 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
-10:13:41.968 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
-10:13:41.968 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Validating expected THANK YOU Message
-10:13:45.013 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - THANK YOU Message Validated
-10:13:45.013 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Text in console 
+16:11:53.536 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Patient Stories Filter
+16:11:53.649 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on 30+ Patient Stories Option
+16:11:57.566 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Experience Filter
+16:11:57.663 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on 5Years+ Experience Option
+16:12:00.275 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on All Filter
+16:12:00.449 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Above 500Rs Fees Option
+16:12:03.149 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on All Filter
+16:12:03.285 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Available Tomorrow Option
+16:12:06.845 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on Sort By Filter
+16:12:09.849 [main] INFO  testCase.TC_001_SearchingCardiologiests - Clicked on High To Low Experience Option
+16:12:10.924 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 0 Details in console
+16:12:12.017 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 0 Name in Excel
+16:12:12.203 [main] INFO  testCase.TC_001_SearchingCardiologiests - ScreenShot Captured of Doctor: 0 Details 
+16:12:12.244 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 1 Details in console
+16:12:12.381 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 1 Name in Excel
+16:12:12.536 [main] INFO  testCase.TC_001_SearchingCardiologiests - ScreenShot Captured of Doctor: 1 Details 
+16:12:12.561 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 2 Details in console
+16:12:12.648 [main] INFO  testCase.TC_001_SearchingCardiologiests - Printed Doctor: 2 Name in Excel
+16:12:12.825 [main] INFO  testCase.TC_001_SearchingCardiologiests - ScreenShot Captured of Doctor: 2 Details 
+16:12:12.825 [main] INFO  testCase.TC_001_SearchingCardiologiests - ***** Ending TC_001_SearchingCardiologiests *****
+16:12:23.610 [main] INFO  testCase.TC_002_CaptureSurgeries - ***** Starting TC_002_CaptureSurgeries *****
+16:12:24.959 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Surgeries 
+16:12:25.018 [main] INFO  testCase.TC_002_CaptureSurgeries - Scrolled Down Untill Popular Surgeries
+16:12:26.278 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Popular Surgeries
+16:12:26.303 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Popular Surgeries in Console and Excel Sheet
+16:12:28.940 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Popular Surgeries in Console and Excel Sheet
+16:12:29.341 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On General Surgery
+16:12:30.632 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of General Surgery
+16:12:30.655 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All General Surgeries in Console and Excel Sheet
+16:12:32.471 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All General Surgeries in Console and Excel Sheet
+16:12:32.635 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+16:12:33.289 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Proctology
+16:12:34.738 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Proctology Surgeries
+16:12:34.773 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Proctology Surgeries in Console and Excel Sheet
+16:12:35.652 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Proctology Surgeries in Console and Excel Sheet
+16:12:35.845 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+16:12:36.571 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Ophthamology
+16:12:37.954 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Ophthamology Surgeries
+16:12:37.978 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Ophthamology Surgeries in Console and Excel Sheet
+16:12:38.506 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Ophthamology Surgeries in Console and Excel Sheet
+16:12:38.659 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+16:12:39.268 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Urology
+16:12:40.684 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Urology Surgeries
+16:12:40.712 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Urology Surgeries in Console and Excel Sheet
+16:12:42.164 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Urology Surgeries in Console and Excel Sheet
+16:12:42.362 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab

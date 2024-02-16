@@ -11,7 +11,7 @@ import testBase.baseClass;
 
 public class TC_003_CorporateHealthAndWellness_InvalidDetails extends baseClass{
 	
-	@Test(priority = 10)
+	@Test(priority = 10, groups= {"sanity"})
 	public void checkingInvalidDetails()
 	{
 	logger.info("***** Starting TC_003_CorporateHealthAndWellness_InvalidDetails *****");

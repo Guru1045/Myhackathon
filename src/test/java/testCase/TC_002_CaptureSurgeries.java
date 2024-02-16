@@ -17,7 +17,7 @@ import utilities.TakeScreenshot;
 
 public class TC_002_CaptureSurgeries extends baseClass{
 	
-	@Test(priority = 3)
+	@Test(priority = 3, groups= {"sanity"})
 	public void CapturePopularSurgeries() throws InterruptedException, IOException
 	{
 	logger.info("***** Starting TC_002_CaptureSurgeries *****");
@@ -74,7 +74,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	
 	
 	
-	@Test(priority = 4)
+	@Test(priority = 4, groups= {"sanity"})
 	public void GeneralSurgeries() throws IOException
 	{
 	try 
@@ -122,7 +122,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	
 	}
 		
-	@Test(priority = 5)
+	@Test(priority = 5, groups= {"sanity"})
 	public void ProctologySurgeries() throws IOException
 	{
 	try 
@@ -168,7 +168,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	
 		
 		
-	@Test(priority = 6)
+	@Test(priority = 6, groups= {"sanity"})
 	public void OphthamologySurgeries() throws IOException
 	{
 	try 
@@ -214,7 +214,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 		
 		
 		
-	@Test(priority = 7)
+	@Test(priority = 7, groups= {"sanity"})
 	public void UrologySurgeries() throws IOException
 	{
 	try 
@@ -260,7 +260,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	}	
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 8, groups= {"sanity"})
 	public void CosmeticSurgeries() throws IOException
 	{
 	try 
@@ -308,7 +308,7 @@ public class TC_002_CaptureSurgeries extends baseClass{
 	
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 9, groups= {"sanity"})
 	public void OrthopedicsSurgeries() throws IOException
 	{
 	try 

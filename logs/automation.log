@@ -1,2 +1,40 @@
-10:13:45.044 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
-10:13:45.048 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****
+16:12:42.932 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Cosmetic
+16:12:44.321 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Cosmetic Surgeries
+16:12:44.349 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Cosmetic Surgeries in Console and Excel Sheet
+16:12:45.073 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Cosmetic Surgeries in Console and Excel Sheet
+16:12:45.202 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+16:12:45.748 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked On Orthopedics
+16:12:47.114 [main] INFO  testCase.TC_002_CaptureSurgeries - Captured ScreenShot of Orthopedics Surgeries
+16:12:47.134 [main] INFO  testCase.TC_002_CaptureSurgeries - Displaying The List of All Orthopedics Surgeries in Console and Excel Sheet
+16:12:47.876 [main] INFO  testCase.TC_002_CaptureSurgeries - Displayed List of All Orthopedics Surgeries in Console and Excel Sheet
+16:12:48.015 [main] INFO  testCase.TC_002_CaptureSurgeries - Clicked on Close Button and Closed the Open Tab
+16:12:48.015 [main] INFO  testCase.TC_002_CaptureSurgeries - ***** Ending TC_002_CaptureSurgeries *****
+16:13:01.845 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Starting TC_003_CorporateHealthAndWellness_InvalidDetails *****
+16:13:02.020 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Clicked On Corporates
+16:13:11.421 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Clicked On Health And Wellness Plans Option
+16:13:11.458 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Scrolled down
+16:13:11.572 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Name Entered
+16:13:11.689 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Organization Name Entered
+16:13:11.793 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - The Contact Number Entered
+16:13:11.890 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Invalid Email-Id Entered
+16:13:12.060 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Organizantion's Size from Dropdown
+16:13:12.191 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Selected Interested-In from Dropdown
+16:13:12.218 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - Schedule button is disabled
+16:13:12.218 [main] INFO  testCase.TC_003_CorporateHealthAndWellness_InvalidDetails - ***** Ending TC_003_CorporateHealthAndWellness_InvalidDetails *****
+16:13:37.324 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Starting TC_004_CorporateHealthAndWellness_ValidDetails *****
+16:13:37.423 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Corporates
+16:14:02.261 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Health And Wellness Plans Option
+16:14:02.324 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Scrolled down
+16:14:02.451 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Name Entered
+16:14:02.563 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Organization Name Entered
+16:14:02.665 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Contact Number Entered
+16:14:02.786 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Valid Email-Id Entered
+16:14:02.937 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Organizantion's Size from Dropdown
+16:14:03.081 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Selected Interested-In from Dropdown
+16:14:03.207 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Clicked On Schedule button 
+16:14:18.396 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Captured ScreenShot of Thank You Pop-Up
+16:14:18.396 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Validating expected THANK YOU Message
+16:14:18.432 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - THANK YOU Message Validated
+16:14:18.432 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Text in console 
+16:14:18.463 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - Printed Thankyou Paragraph in console 
+16:14:18.463 [main] INFO  testCase.TC_004_CorporateHealthAndWellness_ValidDetails - ***** Ending TC_004_CorporateHealthAndWellness_ValidDetails *****
